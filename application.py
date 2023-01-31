@@ -1,11 +1,11 @@
-from flask import Flask
+from flask import Flask, render_template
 from flask import request
 
 application = Flask(__name__)
 
 @application.route('/')
 def hello_world():
-    return 'Hello, World!'
+    return render_template('index.html')
 
 
 @application.route('/name', methods=['GET', 'POST'])
