@@ -17,8 +17,8 @@ The repository contains a RESTful API built with Flask for find the Longest Pali
 ## Local Run
 
 ```shell
-python3 -m venv venv
-source venv/bin/activate
+python3 -m venv ./venv
+source ./.venv/bin/activate
 pip install -r requirements.txt
 flask --app application.py run
 ```
